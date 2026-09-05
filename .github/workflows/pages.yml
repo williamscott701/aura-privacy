@@ -1,0 +1,50 @@
+# Publishes the privacy policy, and only the privacy policy.
+#
+# App Store Connect will not accept the app record without a Privacy Policy URL that
+# resolves, and App Review opens the same link from the paywall and from Settings —
+# `LegalLinks.privacy` points here. Apple hosts a standard EULA that covers the Terms of
+# Use link, but nothing equivalent for privacy, so this page has to exist somewhere.
+#
+# This repository exists only to serve that page. The app itself is in the private
+# `williamscott701/aura`, and it stays private: GitHub Pages needs a public repository on
+# a free plan, and publishing the app repository to get one page would also publish its
+# `docs/` — the ASO strategy, the revenue-model note and the pricing.
+#
+# So there is nothing here but `index.html` and this workflow. Keep it that way.
+#
+# One-time setup: Settings → Pages → Source → GitHub Actions.
+
+name: Publish the privacy policy
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "index.html"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race; queue instead, and do not cancel one that is mid-flight.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deploy
+        uses: actions/deploy-pages@v4
