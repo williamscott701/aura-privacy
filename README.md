@@ -24,6 +24,6 @@ at the top of the page with any substantive edit.
 
 The page states that Aura has no account, no server, no analytics and no network calls,
 and that its App Store privacy label reads "Data Not Collected". The same claim is on the
-app's second onboarding screen, on its privacy card in Settings, on the paywall, and in
+privacy screen of the app's introduction, on its privacy card in Settings, on the paywall, and in
 its `PrivacyInfo.xcprivacy`. Anything that makes a network request falsifies all five at
 once.
