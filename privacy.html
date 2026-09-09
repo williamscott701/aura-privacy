@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aura Privacy Policy</title>
+<meta name="description" content="Aura keeps your migraine diary on your iPhone. No account, no server, no analytics, no network requests.">
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#F2EFEA;
+    --surface:#FAF8F5;
+    --ink:#1E1B22;
+    --ink-soft:#5F5A66;
+    --accent:#5B4470;
+    --rule:#DFDAD3;
+    --amber:#7E5620;
+    --callout-bg:#EDE7F0;
+    --mono-bg:#EBE7E1;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#100F13;
+      --surface:#1A181E;
+      --ink:#E4E1E8;
+      --ink-soft:#9A94A3;
+      --accent:#A88FC4;
+      --rule:#2A2731;
+      --amber:#D9AE70;
+      --callout-bg:#221C2B;
+      --mono-bg:#232028;
+    }
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    -webkit-text-size-adjust:100%;
+  }
+  main{
+    max-width:40em;
+    margin:0 auto;
+    padding:2.75rem 1.5rem 6rem;
+  }
+  h1{
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    font-size:1.9rem;
+    line-height:1.25;
+    margin:0 0 .35rem;
+    letter-spacing:-.01em;
+  }
+  h2{
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    font-size:1.3rem;
+    margin:2.4rem 0 .9rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+    scroll-margin-top:1rem;
+  }
+  h3{ font-size:1.05rem; margin:1.6rem 0 .6rem; }
+  p, li{ font-size:1rem; color:var(--ink); }
+  p{ margin:0 0 1rem; }
+  .meta, .updated{ color:var(--ink-soft); font-size:.95rem; margin:0 0 2.25rem; }
+  .lede{ color:var(--ink-soft); font-size:1.08rem; }
+  a{ color:var(--accent); }
+  ul, ol{ padding-left:1.3rem; margin:0 0 1rem; }
+  li{ margin-bottom:.5rem; }
+  code{
+    background:var(--mono-bg);
+    border-radius:5px;
+    padding:.1rem .35rem;
+    font-size:.9em;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:1.25rem 0 1.75rem;
+    font-size:.95rem;
+  }
+  th, td{
+    text-align:left;
+    padding:.5rem .6rem;
+    border-bottom:1px solid var(--rule);
+    vertical-align:top;
+  }
+  th{ font-size:.8rem; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-soft); }
+  .callout{
+    background:var(--callout-bg);
+    border-left:4px solid var(--amber);
+    border-radius:10px;
+    padding:1.2rem 1.4rem .2rem;
+    margin:1.75rem 0;
+  }
+  .callout h2, .callout h3{ margin-top:0; border-top:none; padding-top:0; }
+  .toc{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:12px;
+    padding:1.1rem 1.4rem;
+    margin:2.25rem 0;
+  }
+  .toc p{
+    margin:0 0 .6rem;
+    font-weight:600;
+    font-size:.8rem;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--ink-soft);
+  }
+  .toc ol{ margin:0; padding-left:1.2rem; }
+  .toc li{ margin-bottom:.4rem; font-size:.95rem; }
+  .toc a{ text-decoration:none; }
+  .toc a:hover{ text-decoration:underline; }
+  .pagenav{
+    margin:0 0 2rem;
+    font-size:.95rem;
+    color:var(--ink-soft);
+  }
+  .pagenav a, .pagenav strong{ margin-right:1rem; }
+  footer{
+    margin-top:3.5rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+    color:var(--ink-soft);
+    font-size:.9rem;
+  }
+  strong{ color:var(--ink); }
+</style>
+</head>
+<body>
+<main>
+  <p class="pagenav"><a href="index.html">Support</a> <strong>Privacy</strong> <a href="terms.html">Terms</a></p>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Aura Migraine Diary &middot; Effective 9 September 2026</p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#summary">The short version</a></li>
+      <li><a href="#records">What Aura records, and where it stays</a></li>
+      <li><a href="#notdo">What Aura does not do</a></li>
+      <li><a href="#health">Health information</a></li>
+      <li><a href="#healthkit">Apple Health</a></li>
+      <li><a href="#widgets">Widgets and the Lock Screen</a></li>
+      <li><a href="#report">The appointment report</a></li>
+      <li><a href="#export">Export and deletion</a></li>
+      <li><a href="#subscription">Your subscription</a></li>
+      <li><a href="#notifications">Notifications</a></li>
+      <li><a href="#crash">Crash reports</a></li>
+      <li><a href="#backups">Device backups</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#changes">Changes</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+
+  <h2 id="summary">The short version</h2>
+  <div class="callout">
+    <p><strong>Aura keeps your diary on your iPhone.</strong> It has no account, no server,
+    and makes no network requests of any kind. Nothing you write in it is sent anywhere,
+    including to us — there is nowhere for it to be sent to.</p>
+  </div>
+
+  <h2 id="records">What Aura records, and where it stays</h2>
+  <p>Everything you enter, and only what you enter. Specifically:</p>
+  <ul>
+    <li><strong>Attacks</strong> — when one started and ended, a severity from 1 to 10
+    where you gave one, which side of your head, which of ten symptoms you had (aura,
+    nausea, vomiting, sensitivity to light, sound or smell, neck pain, dizziness, tingling,
+    difficulty speaking), and anything you typed in the notes.</li>
+    <li><strong>Medication</strong> — the name and dose of what you took, when you took it,
+    and whether it gave no relief, some, or full relief. These are the words you type;
+    Aura has no drug database and looks nothing up.</li>
+    <li><strong>Daily check-ins</strong> — hours of sleep, stress from 1 to 5, glasses of
+    water, caffeine units, alcohol units, meals skipped, hours of screen time, cycle phase
+    if you track it, and the day's notes. Every one of them is optional, and a blank is
+    stored as "not recorded" rather than as a zero.</li>
+    <li><strong>Your settings</strong> — whether you have seen the introduction, which
+    reminders are on and at what time, and whether the free report has been used.</li>
+  </ul>
+  <p>All of it is stored on your device by iOS's own SwiftData, inside an app group shared
+  only with Aura's own widget extension, so that a widget button can log an attack without
+  opening the app. No other app can reach it.</p>
+  <p>We cannot read any of it. Aura contains no networking code — no HTTP client, no
+  sockets, nothing — so there is no mechanism by which your diary could reach us even if
+  we wanted it.</p>
+
+  <h2 id="notdo">What Aura does not do</h2>
+  <p>No account, no sign-up, no email address. No analytics, no telemetry, no usage
+  measurement. No advertising and no ad identifiers. No tracking, and no data shared with
+  data brokers or any other third party. No third-party SDKs of any kind — Aura is built
+  only on Apple's own frameworks. No location. No access to Apple Health, Contacts, Photos,
+  the camera or the microphone.</p>
+  <p>The App Store privacy label for Aura reads <strong>Data Not Collected</strong>, and
+  that is meant literally. The app ships a privacy manifest declaring no tracking, no
+  tracking domains and no collected data types, and a single required-reason API — reading
+  and writing its own preferences.</p>
+
+  <h2 id="health">Health information</h2>
+  <p>What you record in Aura is health information about you, and in the UK and EU it is a
+  special category of personal data under the GDPR. Because it never leaves your device and
+  we never receive it, we do not process it and are not a controller of it in the sense the
+  GDPR uses. You control it directly: it is on your phone, you can export it, and you can
+  delete all of it from Settings.</p>
+  <p>Aura is a diary. It is not a medical device, it does not diagnose, and it does not give
+  medical advice or treatment recommendations. Its analysis reports what was recorded
+  alongside what, never what caused what — and it refuses to report even that until it has
+  enough days on both sides of the comparison to stand behind it.</p>
+
+  <h2 id="healthkit">Apple Health</h2>
+  <p><strong>Aura does not use Apple Health.</strong> This is worth stating precisely,
+  because a migraine diary is exactly the kind of app people assume does. Aura does not
+  read any HealthKit type, does not write any HealthKit type, never asks for HealthKit
+  permission, and does not carry the HealthKit capability at all. Nothing you record here
+  reaches the Health app, and nothing in the Health app reaches Aura.</p>
+  <p>It follows that no health data is used for advertising or marketing — there is no
+  advertising in Aura, no advertising identifier, and no data leaving the device to be used
+  for anything. Should Aura ever gain a Health integration, that restriction stays: health
+  data would be used only to fill in your own diary and the figures shown to you, never for
+  advertising or marketing, never shared with a third party, and never sold. This policy
+  would be updated before such a version shipped.</p>
+
+  <h2 id="widgets">Widgets and the Lock Screen</h2>
+  <p>Aura's widgets do not read your diary. They read a small summary file the app writes
+  into the shared app group, and it holds only: whether an attack is in progress and when it
+  started; the severity of that attack; when your last attack started and ended; how many
+  attacks, attack days and medication days there have been this month; how many of the seven
+  check-in fields you have filled in today; a six-week grid of which days had an attack and
+  the worst severity on each; and how many attacks you have logged in total.</p>
+  <p><strong>Your notes, your symptoms, your medication names and your cycle phase are not
+  in that file</strong>, so no Home Screen or Lock Screen widget can display them.</p>
+  <p>The Live Activity is the one exception, and you should know about it. While an attack
+  is in progress, Aura can show it on the Lock Screen and in the Dynamic Island, and that
+  display carries the elapsed time, the severity, how many doses you have taken and
+  <strong>the name of the most recent medication you recorded</strong>. That is visible to
+  anyone who can see your screen, without unlocking it. It ends when you mark the attack as
+  over. If you would rather it never appeared, turn Live Activities off for Aura in
+  <strong>Settings &rsaquo; Aura</strong>; everything else keeps working.</p>
+  <p>All of this stays on the device. A Live Activity in Aura is never updated over the
+  network — it has no push token and no server behind it.</p>
+
+  <h2 id="report">The appointment report</h2>
+  <p>The PDF is generated on your device, from your diary, by the app itself. It contains
+  the attacks in the period you chose with their times, durations, severities, sides,
+  symptoms and medications, your notes, and the patterns Aura can support.</p>
+  <p>It is never uploaded. Aura hands the finished file to the iOS share sheet and you
+  decide what happens next — print it, message it, mail it, save it to Files, or nothing at
+  all. Once you send it somewhere, it is governed by whatever you sent it through, not by
+  this policy.</p>
+
+  <h2 id="export">Export and deletion</h2>
+  <p><strong>Export.</strong> Settings &rsaquo; Export my diary writes your whole diary as a
+  plain JSON file — every attack, dose and check-in, including your notes — with a legend
+  translating each stored value into the label the app shows. It goes to the share sheet,
+  the same as the report, and nowhere else on its own.</p>
+  <p><strong>Deletion.</strong> Settings &rsaquo; Delete everything removes every attack,
+  dose and check-in from the device. It asks first and it cannot be undone. Deleting the app
+  removes everything, including your settings.</p>
+  <p>Deleting the app deletes the diary, and there is no copy anywhere else to restore from.
+  Export first if you want to keep the record.</p>
+
+  <h2 id="subscription">Your subscription</h2>
+  <p>Aura Pro is sold through the App Store. Apple handles the purchase and tells Aura only
+  whether an active subscription exists for the Apple Account on the device — never a name,
+  an email address, or any payment detail, none of which Aura ever sees or stores.</p>
+  <p>Apple's own handling of that transaction is covered by
+  <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>, not this one.
+  Manage or cancel the subscription in your Apple Account settings.</p>
+  <p>Apple also reports aggregate, anonymised figures to developers — how many devices
+  installed the app in a country, for instance. Those cannot identify you, and the app plays
+  no part in producing them.</p>
+
+  <h2 id="notifications">Notifications</h2>
+  <p>If you turn a reminder on, it is scheduled by iOS on your device and delivered by your
+  device. Nothing about it goes through a server, and Aura sends no push notifications —
+  it has no capability to.</p>
+  <p>There are two, and no others: an evening prompt to fill in the day, and a single nudge
+  if an attack has been left running for eight hours. Permission is asked at the moment you
+  switch a reminder on, never at launch, and declining leaves the rest of the app working
+  normally.</p>
+
+  <h2 id="crash">Crash reports</h2>
+  <p>There are two, and neither sends anything anywhere by itself.</p>
+  <p><strong>Apple's crash reporting.</strong> If you have left "Share With App Developers"
+  on in iOS Settings &rsaquo; Privacy &amp; Security &rsaquo; Analytics &amp; Improvements,
+  Apple may send us a crash report containing diagnostic information about the crash — a
+  stack trace, device model and OS version. This is collected by Apple under your consent to
+  Apple, and reaches us through Apple's developer tools. You can turn it off in iOS Settings
+  at any time. It contains no diary content.</p>
+  <p><strong>The report Aura offers you.</strong> If a previous run ended unexpectedly, Aura
+  builds a report from a trail of which screens and actions were used, and offers it to you
+  in Settings. It deliberately records no diary content — screen and action names only, from
+  a fixed vocabulary, never anything you typed. Aura never sends it. You read it, and then
+  you choose whether to share it and with whom, using the iOS share sheet. If you send it to
+  us, we use it only to fix the fault and keep it no longer than that takes.</p>
+
+  <h2 id="backups">Device backups</h2>
+  <p>If you back up to iCloud or to a computer, your diary is inside that backup, governed by
+  Apple's terms and your own backup encryption rather than by this policy. That is iOS
+  behaviour and applies to app data generally. It is also the only way your diary survives a
+  lost phone without an export.</p>
+
+  <h2 id="security">Security</h2>
+  <p>Your diary is protected by iOS's own file protection, which encrypts app data at rest
+  while the device is locked. A passcode, and Face ID or Touch ID, is what makes that
+  protection meaningful — an unlocked phone with no passcode protects nothing. Given what
+  this app holds, it is worth having.</p>
+  <p>Because nothing is transmitted, there is no network channel to intercept and no server
+  to breach.</p>
+
+  <h2 id="rights">Your rights</h2>
+  <p>Because we hold nothing about you, there is no account to access, correct or close, and
+  no request to us that would produce your data. The equivalent controls are in the app
+  itself:</p>
+  <ul>
+    <li><strong>Access and portability</strong> — Settings &rsaquo; Export my diary writes
+    your whole diary as a JSON file.</li>
+    <li><strong>Correction</strong> — open any attack, dose or check-in and edit it.</li>
+    <li><strong>Erasure</strong> — Settings &rsaquo; Delete everything removes every attack,
+    dose and check-in from the device. It cannot be undone.</li>
+    <li><strong>Erasure of everything, including settings</strong> — delete the app.</li>
+  </ul>
+  <p>If you are in the EU, the UK, California, or anywhere with comparable law, those rights
+  apply to us too; there is simply nothing held for them to operate on. We do not sell or
+  share personal information, because we do not have any. Write to us if you disagree, and we
+  will answer.</p>
+
+  <h2 id="children">Children</h2>
+  <p>Aura is not directed at children and we knowingly collect nothing from anybody, of any
+  age.</p>
+
+  <h2 id="changes">Changes</h2>
+  <p>If this policy changes, the new version replaces this page and the effective date above
+  changes with it; the previous wording stays in the public history of the repository that
+  hosts this page. Because Aura holds no contact details for you, we cannot notify you
+  directly — the current version is always the one at this URL. A change that materially
+  affected how data is handled would be said in the app before it took effect.</p>
+
+  <h2 id="contact">Contact</h2>
+  <p>William Scott &mdash; <a href="mailto:williamscott701@gmail.com">williamscott701@gmail.com</a></p>
+
+  <footer>
+    <p>Aura Migraine Diary &middot; William Scott<br>
+    <a href="mailto:williamscott701@gmail.com">williamscott701@gmail.com</a></p>
+    <p>Aura is a diary. It is not a medical device and it does not give medical advice.</p>
+  </footer>
+</main>
+</body>
+</html>
